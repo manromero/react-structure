@@ -12,7 +12,7 @@ class App extends Component {
 
     render() {
         return (
-          <BrowserRouter>
+          <BrowserRouter basename={process.env.REACT_APP_CONFIG_BASENAME}>
             <Switch>
                 <Route
                     exact={true}
